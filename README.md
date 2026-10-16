@@ -1,6 +1,6 @@
 # Amiga PiStorm32Lite IC2 LCD Display
 
-When I bought my A1200net translucent Amiga 1200 case, and I saw the mounting point for a 1602LCD display, my goal was to use it for my Gotek drive. However in the end I decided on a combination LCD and rotary switch in the end.
+When I bought my A1200net translucent Amiga 1200 case, and I saw the mounting point for a 1602LCD display, my goal was to use it for my Gotek drive. However in the end I decided on a combination LCD and rotary switch mounted on top of the case.
 
 But I still wanted to make use of that mount point, so when I stumbled across information that the PiStorm had I2C output, I thought that would be a great use. Claude from the PIstorm#emu68-dev Discord group pointed in the direction of using the Raspberry Pi camera serial interface (CSI) port, which had I2C output.
 
