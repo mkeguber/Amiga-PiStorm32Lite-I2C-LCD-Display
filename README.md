@@ -9,9 +9,12 @@ But I still wanted to make use of that mount point, so when I stumbled across in
   - PiStorm32Lite + Raspberry Pi 3A+ (see key things to note below 2.1 - 2.3)
   - 1x Adafruit QT 3V to 5V Level Booster Breakout - https://www.adafruit.com/product/5649?srsltid=AU7gw4VB6NmWp_WYTHhk4kB-RSd3uPEljIShO65xmADcnaBZRQZLk4ij
   - 1x 15 pin 1.0mm pitch FCP Breakout Board - https://www.aliexpress.com/item/1005007617729176.html
+  - 1x 1602LCD with I2C piggyback board - https://www.ebay.com.au/itm/304601360871
   - 1x 10cm (100mm) STEMMA QT / Qwiic JST SH 4-Pin Cable - https://www.adafruit.com/product/4399 (see key things to note below 3)
   - 1x 10cm (100mm) FPC cable - https://www.aliexpress.com/item/1005012135666927.html
-  - 1x 4 core cable with dupont connectors (long enough to reach from your PiStorm to the LCD display in the top cover of the case when open. 
+  - 1x 4 core cable with dupont connectors (long enough to reach from your PiStorm to the LCD display in the top cover of the case when open.
+  - 1x M3x10mm bolt, 1x M3x6mm bolt, 3x M3 plastic spacers (see key things to note below 4)
+  
 - **Software**
   - EMU68 (I ran EMU68 on my PiStorm)
 
@@ -43,3 +46,33 @@ And this shows how the stemma cable was connected to the FPC breakout board in o
 
 #### 3 - Stemma cables
 When I did this I bought 2x stemma cables, however you only need the connector at one end of each cable, to plug into the level-shifter. So the wisdom I wish to pass on is just buy 1 10cm cable and cut it in half. One will be soldered to the breakout board and connect to the 3.3V side of the level-shifter and the other half will connect to the 5V side of the level shifter and then be soldered to a 4 core cable with dupont connectors which will connect to your LCD display.
+
+#### 4 - M3 Bolts
+I used M3 bolts because I had them laying around. M3 bolts are slightly larger than the mounting holes in the Raspberry Pi, breakout board and level-shifter. Which means I used force to get them into the holes. However the end result was it threaded the hole and created a tight fit which didn't need a nut on the other side to hold everything in place. It this concerns you, you will need longer bolts to have sufficient thread to place a nut on the other side.
+
+## Hardware Setup
+
+The hardware set up is:
+
+PiStorm32Lite\
+&darr;\
+Raspberry Pi 3A+\
+&darr;\
+CSI Port\
+&darr;\
+FPC cable\
+&darr;\
+FCP Breakout board\
+&darr;\
+Stemma cable\
+&darr;\
+Level shifter\
+&darr;\
+Stemma cable - dupont connectors\
+&darr;\
+I2C piggyback board\
+&darr;\
+1602LCD
+
+
+
