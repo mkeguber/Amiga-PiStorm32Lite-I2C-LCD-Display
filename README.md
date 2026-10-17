@@ -119,7 +119,14 @@ Note: In this image, the level-shifter has been attached to the breakout board (
 
 Note: At this point everything should be connected. After you double check your connections you might be inclined to test everything works before mounting all the boards together.
 
-6 - To test the program, copy the 
+6 - To test the program
+- Connect your PiStorm/Raspberry Pi and the LCD connections you just did.
+- - Copy the **pistormlcd_integrated** file from the **build** folder to your Amiga.
+- From Workbench go the location where **pistormlcd_integrated** was stored and double-click it to run.
+- you should notice 3 things (1) the LCD should have power (2) a window will open on Workbench displaying the data being retrieved, that will be displayed on the LCD, and (3) the LCD should look like the images below.
+
+![Alt Text](images/LCD display memory.jpg)![Alt Text](images/LCD display temp.jpg)![Alt Text](images/LCD display voltage.jpg)
+
 
 
 
