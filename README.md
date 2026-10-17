@@ -180,11 +180,15 @@ Go to the S: drawer and edit your user-startup file and at the bottom add
 
 ## Modifying
 
-I vibe coded all this, this is the first time I've used a compiler. So I asked the AI to create a step by step guide on how I setup my compiler (since it was done from scratch with the help of the AI) to let other newbies like me set up the same environment, download my source code and change it to their hearts content.
+I vibe coded all this, this is the first time I've used a compiler. So I asked the AI to create a step by step guide on how I setup my compiler (since it was done from scratch with the help of the AI) to let other newbies like me set up the same environment, download my source code and change it to their hearts content. You will find this guide in the **docs** folder.
 
 The one thing I can tell you, the 1602LCD can store up to 8 custom characters. I used these to create in incremental vertical and horizontal glyphs for the progress bars. You can ask the AI to show you how that was done in the code.
 
+And here's some images of me vibe coding with the AI. I used mock up LCD display screenshots created from https://chareditor.com/ to explain what I wanted. And snaps of either my Amiga workbench or the LCD to provide feedback to the AI so it knew what was working or faulty.
 
+![Alt Text](images/vibecoding.png)
+
+I hope that answers everything. Enjoy - Michael Gruber / Sydney, Australia.
 
 
 
