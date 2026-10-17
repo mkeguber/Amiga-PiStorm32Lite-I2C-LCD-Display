@@ -98,7 +98,7 @@ Note:
 - And the LCD needs 5V power, but the Raspberry Pi CSI port only provides 3.3V so we need to step up the power from 3.3V to 5V.
 - The Adafruit level-shift does both functions with the one board, which makes it a neat solution.
 
-![Alt Text](pistorn32Lite_I2CLCD_breakout+levelshifter_connected.jpg)
+![Alt Text](images/pistorn32Lite_I2CLCD_breakout+levelshifter_connected.jpg)
 
 4 - And for the other half of the stemma cable, soldered that to your 4 core dupont cable. I happened to have a 4 core which was 3 white and 1 black. I made black ground and connected the rest as per the LCD pinout so its easy for me to connect the right way. Be paranoid about getting the wiring right as it might damage your LCD.
 
@@ -109,12 +109,12 @@ Note:
 | Yellow      | SCL         | I2C SCL     |
 | Black       | GND         | Ground      |
 
-![Alt Text](pistorn32Lite_I2CLCD_connections.jpg)
+![Alt Text](images/pistorn32Lite_I2CLCD_connections.jpg)
 
 5 - Steps 3 and 4 are the only soldering required. That other white wire hanging off my Raspberry Pi goes to a [HDD LED adapter](https://amigastore.eu/en/979-amiga-1200-hdd-led-adapter.html)
 
 
-![Alt Text](pistorn32Lite_I2CLCD_FPC_cable.jpg)
+![Alt Text](images/pistorn32Lite_I2CLCD_FPC_cable.jpg)
 
 
 
