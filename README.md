@@ -109,6 +109,8 @@ Note:
 | Yellow      | SCL         | I2C SCL     |
 | Black       | GND         | Ground      |
 
+Note: In this image, the level-shifter has been attached to the breakout board (this will be explained later).
+
 ![Alt Text](images/pistorn32Lite_I2CLCD_connections.jpg)
 
 5 - Steps 3 and 4 are the only soldering required. That other white wire hanging off my Raspberry Pi goes to a [HDD LED adapter](https://amigastore.eu/en/979-amiga-1200-hdd-led-adapter.html). The next cable of the FPC, the image below shows its orientation in the CSI (camera port) and breakout board. Be gentle with opening the FPC connectors. The CSI is lifted vertically, and the breakout board (mine) pivots/swings up. Notice that if you laid my FPC cable flat one end would have the blue strip facing up, and the other side would have the blue strip facing down, if yours is different (same facing at each end), then your connection may differ.
@@ -117,7 +119,7 @@ Note:
 
 Note: At this point everything should be connected. After you double check your connections you might be inclined to test everything works before mounting all the boards together.
 
-6 - 
+6 - To test the program, copy the 
 
 
 
