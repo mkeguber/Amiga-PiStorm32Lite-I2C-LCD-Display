@@ -111,7 +111,7 @@ Note:
 
 ![Alt Text](pistorn32Lite_I2CLCD_connections.jpg)
 
-5 - 
+5 - Steps 3 and 4 are the only soldering required. That other white wire hanging off my Raspberry Pi goes to a [HDD LED adapter](https://amigastore.eu/en/979-amiga-1200-hdd-led-adapter.html)
 
 
 ![Alt Text](pistorn32Lite_I2CLCD_FPC_cable.jpg)
