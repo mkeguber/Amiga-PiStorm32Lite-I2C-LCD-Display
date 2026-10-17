@@ -129,7 +129,7 @@ Again, I used M3 bolts, they are slightly bigger than the mounting holes and wil
 
 The images here show the level-shifter mounted to the breakout board. I used 1 M3x6mm bolt and plastic spacer to keep the boards apart. 
 
-Note:
+**Note:**
 - the bolt is inserted from the bottom
 - I have a second spacer on the other side ready for the M3x10mm bolt which will connect the whole lot to the Raspberry Pi board.
 - I use insulation tape across the bottom of the breakout board because is exposed to the Raspberry Pi 
@@ -139,7 +139,7 @@ Note:
 
 Then use the M3x10mm bolt to attach the two boards to the Raspberry Pi.
 
-Note:
+**Note:**
 - use more insulation tape on the Raspberry Pi to cover the area shadowed by the boards (paranoia is ok).
 - insert the M3x10mm bolt from the bottom of the Raspberry Pi
 - use a spacer between the Raspberry Pi and the breakout board.
@@ -153,18 +153,22 @@ This is everything mounted back into my Amiga 1200. Again, that other white wire
 
 <img src="images/pistorn32Lite_I2CLCD_topview.jpg" alt="Alt Text">
 
-
 ## Software Setup
 
+### 1 - Copy the Build to your Amiga
+Copy the **pistormlcd_integrated** file from the **build** folder to your Amiga.
 
+### 2 - Run the Build
+From Workbench go the location where **pistormlcd_integrated** was stored and double-click it to run.
 
-### 1 - To test the program
-- Connect your PiStorm/Raspberry Pi and the LCD connections you just did.
-- Copy the **pistormlcd_integrated** file from the **build** folder to your Amiga.
-- From Workbench go the location where **pistormlcd_integrated** was stored and double-click it to run.
-- you should notice 3 things (1) the LCD should have power (2) a window will open on Workbench displaying the data being retrieved, that will be displayed on the LCD, and (3) the LCD should look like the images below.
+**Note:**
+- The LCD should have power.
+- A window will open on Workbench displaying the data being retrieved, that will be displayed on the LCD.
+- The LCD should look like the images below.
 
 <img src="images/LCD-display-memory.jpg" alt="Alt Text" width="300"> <img src="images/LCD-display-temp.jpg" alt="Alt Text" width="300"> <img src="images/LCD-display-voltage.jpg" alt="Alt Text" width="300">
+
+### 3 - Configure your Startup-Sequence
 
 
 
