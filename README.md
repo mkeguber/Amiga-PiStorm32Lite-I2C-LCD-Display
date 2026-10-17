@@ -11,7 +11,7 @@ But I still wanted to make use of that mount point, so when I stumbled across in
   - 1x 15 pin 1.0mm pitch FCP Breakout Board - https://www.aliexpress.com/item/1005007617729176.html
   - 1x 1602LCD with I2C piggyback board - https://www.ebay.com.au/itm/304601360871
   - 1x 10cm (100mm) STEMMA QT / Qwiic JST SH 4-Pin Cable - https://www.adafruit.com/product/4399 (see key things to note below 3)
-  - 1x 10cm (100mm) FPC cable - https://www.aliexpress.com/item/1005012135666927.html
+  - 1x 10cm (100mm) FPC (Flexible Printed Circuit) cable - https://www.aliexpress.com/item/1005012135666927.html
   - 1x 4 core cable with dupont connectors (long enough to reach from your PiStorm to the LCD display in the top cover of the case when open.
   - 1x M3x10mm bolt, 1x M3x6mm bolt, 3x M3 plastic spacers (see key things to note below 4)
   
@@ -111,11 +111,13 @@ Note:
 
 ![Alt Text](images/pistorn32Lite_I2CLCD_connections.jpg)
 
-5 - Steps 3 and 4 are the only soldering required. That other white wire hanging off my Raspberry Pi goes to a [HDD LED adapter](https://amigastore.eu/en/979-amiga-1200-hdd-led-adapter.html)
-
+5 - Steps 3 and 4 are the only soldering required. That other white wire hanging off my Raspberry Pi goes to a [HDD LED adapter](https://amigastore.eu/en/979-amiga-1200-hdd-led-adapter.html). The next cable of the FPC, the image below shows its orientation in the CSI (camera port) and breakout board. Be gentle with opening the FPC connectors. The CSI is lifted vertically, and the breakout board (mine) pivots/swings up. Notice that if you laid my FPC cable flat one end would have the blue strip facing up, and the other side would have the blue strip facing down, if yours is different (same facing at each end), then your connection may differ.
 
 ![Alt Text](images/pistorn32Lite_I2CLCD_FPC_cable.jpg)
 
+Note: At this point everything should be connected. After you double check your connections you might be inclined to test everything works before mounting all the boards together.
+
+6 - 
 
 
 
