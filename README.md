@@ -47,10 +47,10 @@ And this shows how the stemma cable was connected to the FPC breakout board in o
 #### 3 - Stemma cables
 When I did this I bought 2x stemma cables, however you only need the connector at one end of each cable, to plug into the level-shifter. So the wisdom I wish to pass on is just buy 1 10cm cable and cut it in half. One will be soldered to the breakout board and connect to the 3.3V side of the level-shifter and the other half will connect to the 5V side of the level shifter and then be soldered to a 4 core cable with dupont connectors which will connect to your LCD display.
 
-### 4 - M3 Bolts
+#### 4 - M3 Bolts
 I used M3 bolts because I had them laying around. M3 bolts are slightly larger than the mounting holes in the Raspberry Pi, breakout board and level-shifter. Which means I used force to get them into the holes. However the end result was it threaded the hole and created a tight fit which didn't need a nut on the other side to hold everything in place. It this concerns you, you will need longer bolts to have sufficient thread to place a nut on the other side.
 
-### 5 - Executable
+#### 5 - Executable
 The code that will be uploaded here runs in the Amiga OS, but note that if running WHDLoad/Games, multitasking pauses which means the LCD display will also pause. I am looking to create a different version of the code which will run in the Raspberry Pi so it run independently of Amiga OS, but that's for another day. Unless someone smarter than me can share some code that does this.
 
 
