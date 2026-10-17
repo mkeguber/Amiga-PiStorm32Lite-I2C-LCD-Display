@@ -125,7 +125,9 @@ Note: At this point everything should be connected. After you double check your 
 - From Workbench go the location where **pistormlcd_integrated** was stored and double-click it to run.
 - you should notice 3 things (1) the LCD should have power (2) a window will open on Workbench displaying the data being retrieved, that will be displayed on the LCD, and (3) the LCD should look like the images below.
 
-![Alt Text](images/LCD display memory.jpg)![Alt Text](images/LCD display temp.jpg)![Alt Text](images/LCD display voltage.jpg)
+![Alt Text](images/LCD display memory.jpg)
+![Alt Text](images/LCD display temp.jpg)
+![Alt Text](images/LCD display voltage.jpg)
 
 
 
