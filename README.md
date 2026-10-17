@@ -78,8 +78,56 @@ I2C piggyback board\
 &darr;\
 1602LCD
 
+## Hardware Assembly
 
-(I will continue this later. I also need to upload the executable, the edit for the startup-sequence and code for other's to edit)
+1 - Cut your stemma cable in half. So you have two halves, each with a stemma connector on one end.
+
+2 - Strip and solder one of your halves to the FCP breakout board (BOB), as shown in the table below (yes its backwards from the CSI pinout).
+
+| Wire        | BOB pin     | Description |
+| ----------- | ----------- | ----------- |
+| Red         | 1           | 3.3V        |
+| Blue        | 2           | I2C SDA     |
+| Yellow      | 3           | I2C SCL     |
+| Black       | 15          | Ground      |
+
+3 - The other end of the BOB-Stemma cable will connect into the left 3.3V side of the level-shifter board. The level-shift board has two "sides" bottom left is the 3.3V side and top-right is the 5V side. So 3.3V is coming into the board from the left, and going out at 5V on the right. The white dash diagonal line shows the split between the 3.3V and 5V sides.
+
+Note: 
+- The Raspberry Pi output signals at 3.3V, but the LCD communicates at 5V. So we need something to change the power level of the signals. So we use a level shifter.
+- And the LCD needs 5V power, but the Raspberry Pi CSI port only provides 3.3V so we need to step up the power from 3.3V to 5V.
+- The Adafruit level-shift does both functions with the one board, which makes it a neat solution.
+
+![Alt Text](pistorn32Lite_I2CLCD_breakout+levelshifter_connected.jpg)
+
+4 - And for the other half of the stemma cable, soldered that to your 4 core dupont cable. I happened to have a 4 core which was 3 white and 1 black. I made black ground and connected the rest as per the LCD pinout so its easy for me to connect the right way. Be paranoid about getting the wiring right as it might damage your LCD.
+
+| Wire        | LCD pin     | Description |
+| ----------- | ----------- | ----------- |
+| Red         | VCC         | 5V          |
+| Blue        | SDA         | I2C SDA     |
+| Yellow      | SCL         | I2C SCL     |
+| Black       | GND         | Ground      |
+
+![Alt Text](pistorn32Lite_I2CLCD_connections.jpg)
+
+5 - 
+
+
+![Alt Text](pistorn32Lite_I2CLCD_FPC_cable.jpg)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
