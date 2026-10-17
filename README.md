@@ -80,9 +80,11 @@ I2C piggyback board\
 
 ## Hardware Assembly
 
-1 - Cut your stemma cable in half. So you have two halves, each with a stemma connector on one end.
+### 1 - Cut Stemma cable 
+Cut your stemma cable in half. So you have two halves, each with a stemma connector on one end.
 
-2 - Strip and solder one of your halves to the FCP breakout board (BOB), as shown in the table below (yes its backwards from the CSI pinout).
+### 2 - Solder Stemma cable to FCP Breakout Board (BOB)
+Strip and solder one of your halves to the FCP breakout board, as shown in the table below (yes its backwards from the CSI pinout).
 
 | Wire        | BOB pin     | Description |
 | ----------- | ----------- | ----------- |
@@ -91,7 +93,8 @@ I2C piggyback board\
 | Yellow      | 3           | I2C SCL     |
 | Black       | 15          | Ground      |
 
-3 - The other end of the BOB-Stemma cable will connect into the left 3.3V side of the level-shifter board. The level-shift board has two "sides" bottom left is the 3.3V side and top-right is the 5V side. So 3.3V is coming into the board from the left, and going out at 5V on the right. The white dash diagonal line shows the split between the 3.3V and 5V sides.
+### 3 - Connect FCP BOB to Level-Shifter
+The other end of the BOB-Stemma cable will connect into the left 3.3V side of the level-shifter board. The level-shift board has two "sides" bottom left is the 3.3V side and top-right is the 5V side. So 3.3V is coming into the board from the left, and going out at 5V on the right. The white dash diagonal line shows the split between the 3.3V and 5V sides.
 
 Note: 
 - The Raspberry Pi output signals at 3.3V, but the LCD communicates at 5V. So we need something to change the power level of the signals. So we use a level shifter.
@@ -100,7 +103,8 @@ Note:
 
 ![Alt Text](images/pistorn32Lite_I2CLCD_breakout+levelshifter_connected.jpg)
 
-4 - And for the other half of the stemma cable, soldered that to your 4 core dupont cable. I happened to have a 4 core which was 3 white and 1 black. I made black ground and connected the rest as per the LCD pinout so its easy for me to connect the right way. Be paranoid about getting the wiring right as it might damage your LCD.
+### 4 - Connect Level-Shifter to LCD
+And for the other half of the stemma cable, soldered that to your 4 core dupont cable. I happened to have a 4 core which was 3 white and 1 black. I made black ground and connected the rest as per the LCD pinout so its easy for me to connect the right way. Be paranoid about getting the wiring right as it might damage your LCD.
 
 | Wire        | LCD pin     | Description |
 | ----------- | ----------- | ----------- |
@@ -113,21 +117,54 @@ Note: In this image, the level-shifter has been attached to the breakout board (
 
 ![Alt Text](images/pistorn32Lite_I2CLCD_connections.jpg)
 
-5 - Steps 3 and 4 are the only soldering required. That other white wire hanging off my Raspberry Pi goes to a [HDD LED adapter](https://amigastore.eu/en/979-amiga-1200-hdd-led-adapter.html). The next cable of the FPC, the image below shows its orientation in the CSI (camera port) and breakout board. Be gentle with opening the FPC connectors. The CSI is lifted vertically, and the breakout board (mine) pivots/swings up. Notice that if you laid my FPC cable flat one end would have the blue strip facing up, and the other side would have the blue strip facing down, if yours is different (same facing at each end), then your connection may differ.
+### 5 - Connect BOB to Raspberry Pi
+Steps 3 and 4 are the only soldering required. That other white wire hanging off my Raspberry Pi goes to a [HDD LED adapter](https://amigastore.eu/en/979-amiga-1200-hdd-led-adapter.html). The next cable of the FPC, the image below shows its orientation in the CSI (camera port) and breakout board. Be gentle with opening the FPC connectors. The CSI is lifted vertically, and the breakout board (mine) pivots/swings up. Notice that if you laid my FPC cable flat one end would have the blue strip facing up, and the other side would have the blue strip facing down, if yours is different (same facing at each end), then your connection may differ.
 
 ![Alt Text](images/pistorn32Lite_I2CLCD_FPC_cable.jpg)
 
-Note: At this point everything should be connected. After you double check your connections you might be inclined to test everything works before mounting all the boards together.
+Note: At this point everything should be connected. After you double check your connections you might be inclined to test the software by going to **Software Setup** before returning to step 6 where you will mount all the boards together (Why?, in case you have to recheck your soldering).
 
-6 - To test the program
+### 6 - Mount Level-Shifter and BOB to Raspberry Pi
+Again, I used M3 bolts, they are slightly bigger than the mounting holes and will cut into the boards. For me, they created a thread that made everything tight.
+
+The images here show the level-shifter mounted to the breakout board. I used 1 M3x6mm bolt and plastic spacer to keep the boards apart. 
+
+Note:
+- the bolt is inserted from the bottom
+- I have a second spacer on the other side ready for the M3x10mm bolt which will connect the whole lot to the Raspberry Pi board.
+- I use insulation tape across the bottom of the breakout board because is exposed to the Raspberry Pi 
+<img src="images/pistorn32Lite_I2CLCD_screws+spacers.jpg" alt="Alt Text" height="300">
+<img src="images/pistorn32Lite_I2CLCD_breakout_insulated.jpg" alt="Alt Text" height="300">
+<img src="images/pistorn32Lite_I2CLCD_breakout+levelshifter.jpg" alt="Alt Text" height="300">
+
+Then use the M3x10mm bolt to attach the two boards to the Raspberry Pi.
+
+Note:
+- use more insulation tape on the Raspberry Pi to cover the area shadowed by the boards (paranoia is ok).
+- insert the M3x10mm bolt from the bottom of the Raspberry Pi
+- use a spacer between the Raspberry Pi and the breakout board.
+
+Here's a side view of the board assembly showing how its all mounted.
+
+<img src="images/pistorn32Lite_I2CLCD_sideview.jpg" alt="Alt Text">
+
+### 7 - Reinstall your PiStorm and LCD into your Amiga.
+This is everything mounted back into my Amiga 1200. Again, that other white wire hanging off my Raspberry Pi goes to a [HDD LED adapter](https://amigastore.eu/en/979-amiga-1200-hdd-led-adapter.html). 
+
+<img src="images/pistorn32Lite_I2CLCD_topview.jpg" alt="Alt Text">
+
+
+## Software Setup
+
+
+
+### 1 - To test the program
 - Connect your PiStorm/Raspberry Pi and the LCD connections you just did.
-- - Copy the **pistormlcd_integrated** file from the **build** folder to your Amiga.
+- Copy the **pistormlcd_integrated** file from the **build** folder to your Amiga.
 - From Workbench go the location where **pistormlcd_integrated** was stored and double-click it to run.
 - you should notice 3 things (1) the LCD should have power (2) a window will open on Workbench displaying the data being retrieved, that will be displayed on the LCD, and (3) the LCD should look like the images below.
 
-![Alt Text](images/LCD display memory.jpg)
-![Alt Text](images/LCD display temp.jpg)
-![Alt Text](images/LCD display voltage.jpg)
+<img src="images/LCD-display-memory.jpg" alt="Alt Text" width="300"> <img src="images/LCD-display-temp.jpg" alt="Alt Text" width="300"> <img src="images/LCD-display-voltage.jpg" alt="Alt Text" width="300">
 
 
 
