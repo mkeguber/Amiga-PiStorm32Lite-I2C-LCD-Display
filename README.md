@@ -156,10 +156,10 @@ This is everything mounted back into my Amiga 1200. Again, that other white wire
 ## Software Setup
 
 ### 1 - Copy the Build to your Amiga
-Copy the **pistormlcd_integrated** file from the **build** folder to your Amiga.
+Copy the **pistormlcd_integrated** file from the **build** folder to your Amiga C: drawer.
 
 ### 2 - Run the Build
-From Workbench go the location where **pistormlcd_integrated** was stored and double-click it to run.
+From Workbench go the C: drawer and double-click **pistormlcd_integrated**.
 
 **Note:**
 - The LCD should have power.
@@ -170,10 +170,19 @@ From Workbench go the location where **pistormlcd_integrated** was stored and do
 
 ### 3 - Configure your Startup-Sequence
 
+Go to the S: drawer and edit your user-startup file and at the bottom add
 
+**Run >NIL: <NIL: SYS:C/pistormlcd_integrated** 
 
+**Note:**
+- Replace **SYS:** with whatever your workbench partition is called.
+- This will start the LCD display program without a pop-up shell window.
 
+## Modifying
 
+I vibe coded all this, this is the first time I've used a compiler. So I asked the AI to create a step by step guide on how I setup my compiler (since it was done from scratch with the help of the AI) to let other newbies like me set up the same environment, download my source code and change it to their hearts content.
+
+The one thing I can tell you, the 1602LCD can store up to 8 custom characters. I used these to create in incremental vertical and horizontal glyphs for the progress bars. You can ask the AI to show you how that was done in the code.
 
 
 
