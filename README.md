@@ -4,6 +4,8 @@ When I bought my A1200net translucent Amiga 1200 case, and I saw the mounting po
 
 But I still wanted to make use of that mount point, so when I stumbled across information that the PiStorm had I2C output, I thought that would be a great use. Claude from the PIstorm#emu68-dev Discord group pointed me in the right direction, using the Raspberry Pi camera serial interface (CSI) port, which had I2C output.
 
+**Note:** *Flype from the same Discord group advised I should update the code to use the mailbox.resource instead of reimplementing the mbox functions. Why? Having more apps use the RPi mailbox increases a risk of concurrent access, the mailbox.resource is there to avoid that. Ideally I should use .gitmodules to link the @mschulz mailbox.resource repository into my own repository. https://github.com/arczi84/emu68-hdmi-audio contains an example. With this feedback I'll create a v2.0 of the script later down the track.*
+
 ## What you will need
 - **Hardware**
   - PiStorm32Lite + Raspberry Pi 3A+ (see key things to note below 2.1 - 2.3)
